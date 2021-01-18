@@ -101,6 +101,7 @@
         this.$blocker.click(function(e) {
           if (e.target === this)
             $.modal.close();
+            $('video').trigger('pause'); // pause html5 video onclose
         });
     },
 
